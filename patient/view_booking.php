@@ -21,9 +21,7 @@
 			<div class="all_user" style="margin-top:0px; margin-left: 40px;">
 				<?php 
 					include('../config.php');
-					
-
-					$sql = " SELECT * FROM booking WHERE email = '".$_SESSION["email"]."'  ";
+					$sql = "SELECT * FROM booking WHERE email = '".$_SESSION["email"]."'  ";
 					$result = mysqli_query($conn,$sql);
 					$count = mysqli_num_rows($result);
 

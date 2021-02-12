@@ -14,15 +14,11 @@
 
 
 <?php
-		if($_SESSION['adminstatus'] == ""){
-			header("location:adminlogin.php");
-		}
-		
-		   
+if ($_SESSION['adminstatus'] == "") {
+	header("location:adminlogin.php");
+}
 
-	 ?>
-
-
+?>
 <div class="container-fluid">
 		<div class="header_top">
 			<span style="font-size:50px;color:#2c2f84;font-weight:bolder;margin-left:15px;">Doctor Appoinment System</span>
@@ -32,9 +28,9 @@
 	<div class="navbar navbar-default nav">
 		<nav class="menu">
 			<ul>
-				
-				
-				
+
+
+
 				<li><a href="addDoctor2.php">Add Doctor</a></li>
 				<li><a href="college.php">Add College</a></li>
 				<li><a href="viewcollege.php">View College</a></li>
@@ -46,4 +42,4 @@
 			</ul>
 		</nav>
 	</div>
-	
+
