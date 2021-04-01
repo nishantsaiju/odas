@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Online Doctor</title>
+    <title>DAS:Doctor appointment system </title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -43,6 +43,7 @@
       background-color: #012e41;
       color: #fff;
       display: block !important;
+      background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
     }
     .top_bar .phone {
       display: block !important;
@@ -66,9 +67,13 @@
     .badge-success,
     .badge-primary {
       background-color: #012e41 !important;
+      background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
     }
     .logo {
-      margin-left: 270px;
+      font-size:45px;; 
+      width:100%;
+      height:70px;
+      
     }
     .nav-link {
       font-family: "Lato", sans-serif;
@@ -107,6 +112,15 @@
     .message_about {
       background-color: whitesmoke;
     }
+    .site-header {
+      background-color: #012e41;
+      padding: 45px 0 20px;
+      font-size: 15px;
+      line-height: 24px;
+      color: #fff;
+      background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+
+    }
     header .login {
       margin-left: 300px;
     }
@@ -120,6 +134,7 @@
       padding: 10px;
       color: #fff;
     }
+    
     .carousel-indicators .active {
       background-color: #012e41;
     }
@@ -185,6 +200,8 @@
       font-size: 15px;
       line-height: 24px;
       color: #fff;
+      background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+
     }
     .site-footer hr {
       border-top-color: #bbb;
@@ -370,15 +387,32 @@
   </style>
   <body>
     <header>
-     
+      <div class="container">
+        <!-- Top bar -->
+        <div class="">
+        <div class="top_bar">
+          <div class="top_content">
+            <div class="row">
+              <div class="col-lg-6 phone">
+                &nbsp;<i class="fa fa-clock-o" aria-hidden="true"></i>
+                
+              </div>
+              <div class="col-lg-6 social_icons">
+                <div class="social_icons_wrapper">
+                  <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                  <span
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></span>
+                  <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-6 logo">
-                <img
-                  src="logo.JPG"
-                  class="img-fluid"
-                  height="100px!important;"
-                />
+              <div class="logo">
+               <marquee behavior="alternate" direction="left"> <a href="about.php">DOCTOR APPOINTMENT SYSTEM</a></marquee>
               </div>
             </div>
           </div>
@@ -420,10 +454,6 @@
           </div>
           <!-- navbar-collapse.// -->
         </nav>
-
-        <!-- Slider -->
-      
-        <!-- /Slider -->
-        <!-- Notice -->
+        </div>
       </div>
     </header>

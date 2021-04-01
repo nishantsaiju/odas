@@ -5,7 +5,9 @@
             <div class="col-sm-12 col-md-6">
               <h6>About</h6>
               <p class="text-justify">
-                Online Doctor Appointment System is now offering online doctor consultation services in Nepal through different media channels.We have been receiving many requests for online doctor appointment from patients all around Nepal and abroad in the past few months. We know our regular patients have also been facing difficulties to connect with us due to the COVID – 19 pandemic.To accommodate our patients’ requests and adapt to the changes occurring in the world right now, we have officially started providing online doctor consultation services.
+              Doctor appointment system  is an online web application which allows the patient to book appointments through online registration
+
+              </p>
             </div>
 
             <div class="col-xs-6 col-md-3">
@@ -13,31 +15,21 @@
               <ul class="footer-links">
                 <li>
                   <i class="fa fa-caret-right" aria-hidden="true"></i>
-                  <a href="http://scanfcode.com/category/c-language/">Home</a>
+                  <a href="index.php">Home</a>
                 </li>
                 <li>
                   <i class="fa fa-caret-right" aria-hidden="true"></i>
-                  <a href="http://scanfcode.com/category/front-end-development/"
+                  <a href="about.php"
                     >About</a
                   >
                 </li>
+
                 <li>
                   <i class="fa fa-caret-right" aria-hidden="true"></i>
-                  <a href="http://scanfcode.com/category/back-end-development/"
-                    >Programs</a
-                  >
+                  <a href="contact.php">Contact</a>
                 </li>
                 <li>
-                  <i class="fa fa-caret-right" aria-hidden="true"></i>
-                  <a
-                    href="http://scanfcode.com/category/java-programming-language/"
-                    >Notice</a
-                  >
-                </li>
-                <li>
-                  <i class="fa fa-caret-right" aria-hidden="true"></i>
-                  <a href="http://scanfcode.com/category/android/">Contact</a>
-                </li>
+
               </ul>
             </div>
 
@@ -45,16 +37,15 @@
               <h6>Address</h6>
               <ul class="footer-links">
                 <li>
-                  <a href="http://scanfcode.com/about/"
-                    >Itahari, Sunsari Nepal
-                  </a>
+                  Itahari, Sunsari Nepal
+                </li>
+                <li>
+                  phone: +9770000000000
+                </li>
+                <li>
+                  email: nsaiju.work@gmail.com
                 </li>
 
-                <li>
-                  <a href="http://scanfcode.com/contribute-at-scanfcode/"
-                    >Email: nsaiju.work@gmail.com
-                  </a>
-                </li>
 
               </ul>
             </div>
@@ -66,12 +57,11 @@
             <div class="col-md-8 col-sm-6 col-xs-12">
               <p class="copyright-text">
                 Copyright &copy; 2021 All Rights Reserved by
-                <a href="#">ODAS</a>.
+                <a href="#">Developers</a>.
               </p>
             </div>
 
 
-            </div>
           </div>
         </div>
       </footer>
