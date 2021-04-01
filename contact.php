@@ -58,7 +58,7 @@
                                 </div>
 
                                 <div class="text-center">
-                                    <input type="submit" value="Send" class="btn btn-info btn-block rounded-0 py-2">
+                                    <input type="submit"  name="submit"value="Send" class="btn btn-info btn-block rounded-0 py-2">
                                 </div>
                             </div>
 
@@ -92,12 +92,12 @@
 	<?php include('regivalidate.php'); ?>
 
 	<?php
-		if(isset($_POST["sbmt"])) 
+		if(isset($_POST["submit"])) 
 		{
 			
 			$cn=makeconnection();			
 
-					$s="insert into contacts(name,email,mobile,subj) values('" . $_POST["t1"] ."','" . $_POST["t2"] . "','" . $_POST["t3"] . "','" . $_POST["t4"]   ."')";
+					$s="insert into contact(name,email,mobile,subj) values('" . $_POST["t1"] ."','" . $_POST["t2"] . "','" . $_POST["t3"] . "','" . $_POST["t4"]   ."')";
 					
 					
 			$q=mysqli_query($cn,$s);

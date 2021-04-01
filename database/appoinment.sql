@@ -1,23 +1,24 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
--- http://www.phpmyadmin.net
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 06, 2018 at 10:44 AM
--- Server version: 5.6.17
--- PHP Version: 5.5.12
+-- Generation Time: Feb 18, 2021 at 10:34 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.4.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `projectmms`
+-- Database: `das`
 --
 
 -- --------------------------------------------------------
@@ -26,11 +27,10 @@ SET time_zone = "+00:00";
 -- Table structure for table `bloodgroup`
 --
 
-CREATE TABLE IF NOT EXISTS `bloodgroup` (
-  `bg_id` int(11) NOT NULL AUTO_INCREMENT,
-  `bg_name` varchar(12) NOT NULL,
-  PRIMARY KEY (`bg_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+CREATE TABLE `bloodgroup` (
+  `bg_id` int(11) NOT NULL,
+  `bg_name` varchar(12) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `bloodgroup`
@@ -52,8 +52,8 @@ INSERT INTO `bloodgroup` (`bg_id`, `bg_name`) VALUES
 -- Table structure for table `booking`
 --
 
-CREATE TABLE IF NOT EXISTS `booking` (
-  `booking_id` int(22) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `booking` (
+  `booking_id` int(22) NOT NULL,
   `dname` varchar(22) NOT NULL,
   `userid` int(22) NOT NULL,
   `dcontact` varchar(22) NOT NULL,
@@ -65,22 +65,8 @@ CREATE TABLE IF NOT EXISTS `booking` (
   `address` varchar(22) NOT NULL,
   `dates` date NOT NULL,
   `tyme` varchar(22) NOT NULL,
-  `payment` varchar(22) NOT NULL,
-  PRIMARY KEY (`booking_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
-
---
--- Dumping data for table `booking`
---
-
-INSERT INTO `booking` (`booking_id`, `dname`, `userid`, `dcontact`, `expertise`, `fee`, `pname`, `pcontact`, `email`, `address`, `dates`, `tyme`, `payment`) VALUES
-(13, 'Md. Azharul Islam', 1007, '01521470368', 'Cardiologist', '800', 'azad', '01521470368', 'azad.ece13@gmail.com', 'Dhaka', '2018-07-27', '11.00am', 'bKask'),
-(14, 'Dr. Majedul Islam', 1008, '01734761999', 'Medicine', '800', 'patient', 'contact', 'mamun@gmail.com', 'Dinajpur', '2018-07-28', '03.00pm', 'bKask'),
-(15, 'Md. Azharul Islam', 1009, '01521470368', 'Cardiologist', '800', 'mamun', '01521470368', 'mamun@gmail.com', 'Rangpur', '2018-07-26', '11.00am', 'Rocket'),
-(16, 'Dr. Badol Miah', 1004, '01949389983', 'Kedney', '700', 'mamun', '01521470368', 'mamun@gmail.com', 'Dinajpur', '2018-07-20', '11.00am', 'bKask'),
-(17, 'Dr. Azharul Islam', 1002, '01764761919', 'Medicine', '500', 'azad', '01521470368', 'azad.ece13@gmail.com', 'Rangpur', '2018-07-26', '03.00pm', 'bKask'),
-(18, 'Dr. Badol Miah', 1004, '01949389983', 'Kedney', '700', 'dezazad', 'dezazad', 'devloperazad.hstu@gmai', 'Dinajpur', '2018-07-07', '11.00am', 'Rocket'),
-(19, 'Dr. Rashid', 1003, '01521670654', 'Medicine', '600', '', '', 'developerazad.hstu@gmail.com', '', '2018-07-15', '11.00am', 'bKask');
+  `payment` varchar(22) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -88,11 +74,10 @@ INSERT INTO `booking` (`booking_id`, `dname`, `userid`, `dcontact`, `expertise`,
 -- Table structure for table `category`
 --
 
-CREATE TABLE IF NOT EXISTS `category` (
-  `id` int(22) NOT NULL AUTO_INCREMENT,
-  `cat` varchar(22) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+CREATE TABLE `category` (
+  `id` int(22) NOT NULL,
+  `cat` varchar(22) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `category`
@@ -111,17 +96,38 @@ INSERT INTO `category` (`id`, `cat`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `college`
+--
+
+CREATE TABLE `college` (
+  `id` int(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `acronym` varchar(100) NOT NULL,
+  `establish` varchar(100) NOT NULL,
+  `location` varchar(100) NOT NULL,
+  `website` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `college`
+--
+
+INSERT INTO `college` (`id`, `name`, `acronym`, `established`, `location`, `website`) VALUES
+(6, 'ddd', 'gf', 'g', 'g@gmail.com', 'dd');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `contact`
 --
 
-CREATE TABLE IF NOT EXISTS `contact` (
-  `contact_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `contact` (
+  `contact_id` int(11) NOT NULL,
   `firstname` varchar(10) NOT NULL,
   `lastname` varchar(10) NOT NULL,
   `email` varchar(15) NOT NULL,
-  `comment` varchar(111) NOT NULL,
-  PRIMARY KEY (`contact_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+  `comment` varchar(111) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `contact`
@@ -137,8 +143,8 @@ INSERT INTO `contact` (`contact_id`, `firstname`, `lastname`, `email`, `comment`
 -- Table structure for table `doctor`
 --
 
-CREATE TABLE IF NOT EXISTS `doctor` (
-  `doc_id` int(22) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `doctor` (
+  `doc_id` int(22) NOT NULL,
   `doctor_id` varchar(22) NOT NULL,
   `name` varchar(22) NOT NULL,
   `address` varchar(100) NOT NULL,
@@ -149,9 +155,8 @@ CREATE TABLE IF NOT EXISTS `doctor` (
   `fee` varchar(111) NOT NULL,
   `userid` varchar(22) NOT NULL,
   `password` varchar(22) NOT NULL,
-  `pic` varchar(111) CHARACTER SET latin1 COLLATE latin1_bin NOT NULL,
-  PRIMARY KEY (`doc_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+  `pic` varchar(111) CHARACTER SET latin1 COLLATE latin1_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `doctor`
@@ -179,15 +184,14 @@ INSERT INTO `doctor` (`doc_id`, `doctor_id`, `name`, `address`, `contact`, `emai
 -- Table structure for table `donation`
 --
 
-CREATE TABLE IF NOT EXISTS `donation` (
-  `donation_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `donation` (
+  `donation_id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
   `address` varchar(100) NOT NULL,
   `unit` varchar(2) NOT NULL,
   `dates` date NOT NULL,
-  `email` varchar(222) NOT NULL,
-  PRIMARY KEY (`donation_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+  `email` varchar(222) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `donation`
@@ -209,12 +213,11 @@ INSERT INTO `donation` (`donation_id`, `name`, `address`, `unit`, `dates`, `emai
 -- Table structure for table `feedback`
 --
 
-CREATE TABLE IF NOT EXISTS `feedback` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `feedback` (
+  `id` int(11) NOT NULL,
   `email` varchar(22) NOT NULL,
-  `feedback` varchar(22) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+  `feedback` varchar(22) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `feedback`
@@ -230,17 +233,16 @@ INSERT INTO `feedback` (`id`, `email`, `feedback`) VALUES
 -- Table structure for table `patient`
 --
 
-CREATE TABLE IF NOT EXISTS `patient` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `patient` (
+  `id` int(11) NOT NULL,
   `name` varchar(22) NOT NULL,
   `age` varchar(22) NOT NULL,
   `contact` varchar(22) NOT NULL,
   `address` varchar(22) NOT NULL,
   `bgroup` varchar(22) NOT NULL,
   `email` varchar(111) NOT NULL,
-  `password` varchar(22) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+  `password` varchar(22) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `patient`
@@ -251,7 +253,8 @@ INSERT INTO `patient` (`id`, `name`, `age`, `contact`, `address`, `bgroup`, `ema
 (2, 'Al-Mamun', '22', '01746314882', 'Saidpur,Rangpur', 'AB+', 'mamun@gmail.com', '123'),
 (3, 'test name', '22', '01765674567', 'Dinajpur', 'A-', 'test@gmail.com', '123'),
 (5, 'developerazad', '21', '01764761919', 'Dhaka', 'O+', 'developerazad.hstu@gmail.com', 'developerazad'),
-(6, 'developerazad', '22', '01521470368', 'Dhaka', 'AB+', 'developerazad.hstu@gmail.com', '1234');
+(6, 'developerazad', '22', '01521470368', 'Dhaka', 'AB+', 'developerazad.hstu@gmail.com', '1234'),
+(7, 'dssd', '12', '878', 'rer', 'O-', 'hel@gmail.com', '123123');
 
 -- --------------------------------------------------------
 
@@ -259,8 +262,8 @@ INSERT INTO `patient` (`id`, `name`, `age`, `contact`, `address`, `bgroup`, `ema
 -- Table structure for table `registration`
 --
 
-CREATE TABLE IF NOT EXISTS `registration` (
-  `donar_id` int(100) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `registration` (
+  `donar_id` int(100) NOT NULL,
   `username` varchar(100) NOT NULL,
   `gender` varchar(100) NOT NULL,
   `age` varchar(100) NOT NULL,
@@ -272,9 +275,8 @@ CREATE TABLE IF NOT EXISTS `registration` (
   `dates` date NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` int(100) NOT NULL,
-  `pic` varchar(1000) NOT NULL,
-  PRIMARY KEY (`donar_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=123 ;
+  `pic` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `registration`
@@ -322,8 +324,8 @@ INSERT INTO `registration` (`donar_id`, `username`, `gender`, `age`, `contact`, 
 -- Table structure for table `requestes`
 --
 
-CREATE TABLE IF NOT EXISTS `requestes` (
-  `reg_id` int(100) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `requestes` (
+  `reg_id` int(100) NOT NULL,
   `name` varchar(100) NOT NULL,
   `gender` varchar(100) NOT NULL,
   `age` int(100) NOT NULL,
@@ -331,9 +333,8 @@ CREATE TABLE IF NOT EXISTS `requestes` (
   `bgroup` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `reqdate` date NOT NULL,
-  `detail` varchar(100) NOT NULL,
-  PRIMARY KEY (`reg_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+  `detail` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `requestes`
@@ -354,7 +355,7 @@ INSERT INTO `requestes` (`reg_id`, `name`, `gender`, `age`, `mobile`, `bgroup`, 
 -- Table structure for table `user`
 --
 
-CREATE TABLE IF NOT EXISTS `user` (
+CREATE TABLE `user` (
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   `type` varchar(100) NOT NULL
@@ -374,7 +375,7 @@ INSERT INTO `user` (`username`, `password`, `type`) VALUES
 -- Table structure for table `users`
 --
 
-CREATE TABLE IF NOT EXISTS `users` (
+CREATE TABLE `users` (
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   `type` varchar(100) NOT NULL
@@ -386,6 +387,147 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`username`, `password`, `type`) VALUES
 ('adnim', '13020944', 'admin');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `bloodgroup`
+--
+ALTER TABLE `bloodgroup`
+  ADD PRIMARY KEY (`bg_id`);
+
+--
+-- Indexes for table `booking`
+--
+ALTER TABLE `booking`
+  ADD PRIMARY KEY (`booking_id`);
+
+--
+-- Indexes for table `category`
+--
+ALTER TABLE `category`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `college`
+--
+ALTER TABLE `college`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`contact_id`);
+
+--
+-- Indexes for table `doctor`
+--
+ALTER TABLE `doctor`
+  ADD PRIMARY KEY (`doc_id`);
+
+--
+-- Indexes for table `donation`
+--
+ALTER TABLE `donation`
+  ADD PRIMARY KEY (`donation_id`);
+
+--
+-- Indexes for table `feedback`
+--
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `patient`
+--
+ALTER TABLE `patient`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `registration`
+--
+ALTER TABLE `registration`
+  ADD PRIMARY KEY (`donar_id`);
+
+--
+-- Indexes for table `requestes`
+--
+ALTER TABLE `requestes`
+  ADD PRIMARY KEY (`reg_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `bloodgroup`
+--
+ALTER TABLE `bloodgroup`
+  MODIFY `bg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `booking`
+--
+ALTER TABLE `booking`
+  MODIFY `booking_id` int(22) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT for table `category`
+--
+ALTER TABLE `category`
+  MODIFY `id` int(22) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `college`
+--
+ALTER TABLE `college`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `doctor`
+--
+ALTER TABLE `doctor`
+  MODIFY `doc_id` int(22) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `donation`
+--
+ALTER TABLE `donation`
+  MODIFY `donation_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `feedback`
+--
+ALTER TABLE `feedback`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `patient`
+--
+ALTER TABLE `patient`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `registration`
+--
+ALTER TABLE `registration`
+  MODIFY `donar_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
+
+--
+-- AUTO_INCREMENT for table `requestes`
+--
+ALTER TABLE `requestes`
+  MODIFY `reg_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

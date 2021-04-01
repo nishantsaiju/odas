@@ -45,7 +45,7 @@
 			<div class="formstyle" style="padding: 10px;border: 1px solid lightgrey;margin-right: 376px;margin-left: 406px; margin-bottom: 25px;background-color:#f3f3f8;color:#141313;">
 				<form action="" method="post" class="text-center">
 					<label>
-						<input type="text" name="userid"  placeholder="userid" required>
+						<input type="email" name="email"  placeholder="email" required>
 					</label><br><br>
 					<label>
 						<input type="password" name="password"  placeholder="password">
@@ -62,7 +62,7 @@
 							include('../config.php');
 							if(isset($_POST["submit"])){
 
-							$sql= "SELECT * FROM doctor WHERE userid= '" . $_POST["userid"]."' AND password= '" . $_POST["password"]."'";
+							$sql= "SELECT * FROM doctor WHERE email= '" . $_POST["email"]."' AND password= '" . $_POST["password"]."'";
 
 							$result = $conn->query($sql);
 

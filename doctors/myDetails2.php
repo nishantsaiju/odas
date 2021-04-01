@@ -8,7 +8,7 @@
 <!-- for retriving data -->
 				<?php 
 							include('../config.php');
-							$sql="SELECT * FROM doctor where userid='" . $_SESSION["userid"] . "'";
+							$sql="SELECT * FROM doctor where email='" . $_SESSION["email"] . "'";
 			
 							$q=mysqli_query($conn,$sql);
 							$row=mysqli_num_rows($q);

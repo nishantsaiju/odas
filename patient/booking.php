@@ -44,36 +44,36 @@
 					
 
 					<label>
-						Dr. Name: <input type="text" name="dname" value="<?php echo $name; ?>" >
+						Dr. Name: <input type="text" name="dname" value="<?php echo $name; ?>" readonly>
 					</label><br><br>
 
  					<label>
-						Contact: <input type="text" name="dcontact" value="<?php echo $contact; ?>" />
+						Contact: <input type="text" name="dcontact" value="<?php echo $contact; ?>" readonly>
 					</label><br><br>
  					
 					<label>
-						Category: <input type="text" name="expertise" value="<?php echo $expertise; ?>" >
+						Category: <input type="text" name="expertise" value="<?php echo $expertise; ?>" readonly>
 					</label><br><br>
 
 					<label>
-						Fee(Tk): <input type="text" name="fee" value="<?php echo $fee; ?>" >
+						Fee(Rs): <input type="text" name="fee" value="<?php echo $fee; ?>" readonly >
 					</label><br><br>
 					<label>
-						Your Name: <input type="text" name="pname" value="">
+						Your Name: <input type="text" name="pname" value="" require>
 					</label><br><br>
 
  					<label>
-						 Contact: <input type="text" name="pcontact" value=""/>
+						 Contact: <input type="text" name="pcontact" value="" require>
 					</label><br><br>
 					<label>
-						 E-mail: <input type="email" name="email" value=""/>
+						 E-mail: <input type="email" name="email" value="" required>
 					</label><br><br>
  					
 					<label>
-						 Address: <input type="text" name="address" value="">
+						 Address: <input type="text" name="address" value="" required>
 					</label><br><br>
 					<label>
-						 Date: <input type="date" name="dates" value="">
+						 Date: <input type="date" name="dates" value=""required >
 					</label><br><br>
 					<label>
 						 Time: <select name="tyme" required>
@@ -82,13 +82,7 @@
 										<option value="03.00pm">03.00pm</option>
 									</select>
 					</label><br><br>
-					<label>
-						 Payment: <select name="payment" required>
-										<option value="">-select-</option>
-										<option value="Rocket">Rocket</option>
-										<option value="bKask">bKask</option>
-									</select>
-					</label><br><br>
+					
 					<label>
 						  <input type="hidden" name="userid" value="<?php echo $userid; ?>">
 					</label><br><br>
@@ -113,7 +107,7 @@
 							
 
 						$sql = " INSERT INTO booking (dname,userid,dcontact,expertise,fee, pname,pcontact,email,address,dates,tyme,payment)
-							VALUES ('" . $_POST["dname"] . "','" . $_POST["userid"] . "','" . $_POST["dcontact"] . "','" . $_POST["expertise"] . "', '" . $_POST["fee"] . "','" . $_POST["pname"] . "','". $_POST["pcontact"] . "','". $_POST["email"] . "','". $_POST["address"] . "','". $_POST["dates"] . "','". $_POST["tyme"] . "','". $_POST["payment"] . "' )";
+							VALUES ('" . $_POST["name"] . "','" . $_POST["userid"] . "','" . $_POST["dcontact"] . "','" . $_POST["expertise"] . "', '" . $_POST["fee"] . "','" . $_POST["pname"] . "','". $_POST["pcontact"] . "','". $_POST["email"] . "','". $_POST["address"] . "','". $_POST["dates"] . "','". $_POST["tyme"] . "','". $_POST["payment"] . "' )";
 
 							if ($conn->query($sql) === TRUE) {
 							    echo "<script>alert('Your booking has been accepted!');</script>";

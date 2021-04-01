@@ -5,10 +5,8 @@
             <div class="col-sm-12 col-md-6">
               <h6>About</h6>
               <p class="text-justify">
-                A DocCoop is "an autonomous national professional association of
-                Nepalese Doctors united voluntarily to meet our common economic,
-                social, and cultural needs and aspirations through a
-                jointly-owned enterprise".
+              Doctor appointment system  is an online web application which allows the patient to book appointments through online registration
+               
               </p>
             </div>
 
@@ -17,30 +15,22 @@
               <ul class="footer-links">
                 <li>
                   <i class="fa fa-caret-right" aria-hidden="true"></i>
-                  <a href="http://scanfcode.com/category/c-language/">Home</a>
+                  <a href="index.php">Home</a>
                 </li>
                 <li>
                   <i class="fa fa-caret-right" aria-hidden="true"></i>
-                  <a href="http://scanfcode.com/category/front-end-development/"
+                  <a href="about.php"
                     >About</a
                   >
                 </li>
+                
                 <li>
                   <i class="fa fa-caret-right" aria-hidden="true"></i>
-                  <a href="http://scanfcode.com/category/back-end-development/"
-                    >Programs</a
-                  >
+                  <a href="contact.php">Contact</a>
                 </li>
                 <li>
                   <i class="fa fa-caret-right" aria-hidden="true"></i>
-                  <a
-                    href="http://scanfcode.com/category/java-programming-language/"
-                    >Notice</a
-                  >
-                </li>
-                <li>
-                  <i class="fa fa-caret-right" aria-hidden="true"></i>
-                  <a href="http://scanfcode.com/category/android/">Contact</a>
+                  <a href="privacy.php">Privacy Policy</a>
                 </li>
               </ul>
             </div>
@@ -49,26 +39,16 @@
               <h6>Address</h6>
               <ul class="footer-links">
                 <li>
-                  <a href="http://scanfcode.com/about/"
-                    >Maitidevi, Kathmandu Nepal
-                  </a>
+                  Itahari, Sunsari Nepal
                 </li>
                 <li>
-                  <a href="http://scanfcode.com/contact/"
-                    >Phone: +977 9841176081
-                  </a>
+                  phone: +9770000000000
                 </li>
                 <li>
-                  <a href="http://scanfcode.com/contribute-at-scanfcode/"
-                    >Email: doctorscooperative@gmail.com
-                  </a>
+                  email: nsaiju.work@gmail.com
                 </li>
-                <li>
-                  <a href="http://scanfcode.com/privacy-policy/"
-                    >Privacy Policy</a
-                  >
-                </li>
-                <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                
+                
               </ul>
             </div>
           </div>
@@ -78,8 +58,8 @@
           <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-12">
               <p class="copyright-text">
-                Copyright &copy; 2017 All Rights Reserved by
-                <a href="#">DOCCOOP</a>.
+                Copyright &copy; 2021 All Rights Reserved by
+                <a href="#">Developers</a>.
               </p>
             </div>
 

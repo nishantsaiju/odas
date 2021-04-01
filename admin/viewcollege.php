@@ -2,6 +2,9 @@
   session_start();
   }  
 ?>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous">
 
 <?php include('header.php'); ?>
   <?php include('../config.php')?>
@@ -36,7 +39,7 @@
   <td><?php echo $i+1?></td>
   <td><?php echo $row["name"]; ?></td>
   <td><?php echo $row["acronym"]; ?></td>
-  <td><?php echo $row["established"]; ?></td>
+  <td><?php echo $row["coctact"]; ?></td>
   <td><?php echo $row["location"]; ?></td>
   <td><?php echo $row["website"]; ?></td>
  <td><a href="collegedelete.php?collegeid=<?php echo $row['id']; ?>">Delete</a></td>

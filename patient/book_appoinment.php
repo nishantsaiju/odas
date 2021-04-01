@@ -9,10 +9,10 @@
 
 
 	<!-- this is for donor registraton -->
-	<div class="recipient_reg" style="background-color:#272327;">
-		<h3 class="text-center" style="background-color:#272327;color: #fff;">Booking Appoinment</h3>
+	<div class="recipient_reg" style="background-color:#56d8e4;">
+		<h3 class="text-center" style="background-color:#56d8e4;color: #fff;">Booking Appoinment</h3>
 
-		<div class="formstyle" style="float: right;padding:25px;border: 1px solid lightgrey;margin-right:415px; margin-bottom:30px;background-color: #101011;color:#d4530d;;">
+		<div class="formstyle" style="float: right;padding:25px;border: 1px solid lightgrey;margin-right:415px; margin-bottom:30px;background:linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);color:#56d8e4;;">
 		<form enctype="multipart/form-data" method="post" class="text-center">
 			 <div class="col-md-12">
 				  

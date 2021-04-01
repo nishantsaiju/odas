@@ -17,30 +17,11 @@
             <div class="carousel-item active">
               <img
                 src="img/header_img4.jpg" width="100%;"
-                alt="..."
+                alt=""
               />
              
             </div>
-            <div class="carousel-item">
-              <img
-                src="https://nefscun.org.np/wp-content/uploads/2019/12/NEFSCUN-BOD.jpg"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Annual meeting</h5>
-                <p>...</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://nefscun.org.np/wp-content/uploads/2019/12/NEFSCUN-BOD.jpg"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Annual meeting</h5>
-                <p>...</p>
-              </div>
-            </div>
+            
           </div>
           <a
             class="carousel-control-prev"

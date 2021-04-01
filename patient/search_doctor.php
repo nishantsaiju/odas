@@ -20,10 +20,10 @@
 					<label>
 						Search By:<select name="address" type="text" style="width: 110px;margin-right: 175px;" />
 												<option>-Select-</option>
-												<option>Dhaka</option>
-												<option>Dinajpur</option>
-												<option>Rangpur</option>
-												<option>Rajsahi</option>
+												<option>Biratnagar</option>
+												<option>Birtamod</option>
+												<option>Dharan</option>
+												<option>Kathmandu</option>
 												
 											</select>
 
