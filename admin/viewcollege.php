@@ -25,12 +25,12 @@
   <table>
   <tr>
   <td>S.N</td>
-  <td>Employee Id</td>
-  <td>First Name</td>
-  <td>Last Name</td>
-  <td>City</td>
-  <td>Email id</td>
-  <td>Action</td>
+  <td>Name</td>
+  <td>Acronym</td>
+  <td>Contact</td>
+  <td>Location</td>
+  <td>Website</td>
+  
   </tr>
   <?php
   $i=0;
@@ -39,7 +39,7 @@
   <td><?php echo $i+1?></td>
   <td><?php echo $row["name"]; ?></td>
   <td><?php echo $row["acronym"]; ?></td>
-  <td><?php echo $row["coctact"]; ?></td>
+  <td><?php echo $row["contact"]; ?></td>
   <td><?php echo $row["location"]; ?></td>
   <td><?php echo $row["website"]; ?></td>
  <td><a href="collegedelete.php?collegeid=<?php echo $row['id']; ?>">Delete</a></td>

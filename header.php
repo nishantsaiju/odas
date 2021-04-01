@@ -395,7 +395,7 @@
             <div class="row">
               <div class="col-lg-6 phone">
                 &nbsp;<i class="fa fa-clock-o" aria-hidden="true"></i>
-                2020:12:28
+                
               </div>
               <div class="col-lg-6 social_icons">
                 <div class="social_icons_wrapper">

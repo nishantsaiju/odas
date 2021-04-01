@@ -6,7 +6,7 @@
               <h6>About</h6>
               <p class="text-justify">
               Doctor appointment system  is an online web application which allows the patient to book appointments through online registration
-               
+
               </p>
             </div>
 
@@ -23,13 +23,13 @@
                     >About</a
                   >
                 </li>
-                
+
                 <li>
                   <i class="fa fa-caret-right" aria-hidden="true"></i>
                   <a href="contact.php">Contact</a>
                 </li>
                 <li>
-                
+
               </ul>
             </div>
 
@@ -45,8 +45,8 @@
                 <li>
                   email: nsaiju.work@gmail.com
                 </li>
-                
-                
+
+
               </ul>
             </div>
           </div>
@@ -61,7 +61,7 @@
               </p>
             </div>
 
-            
+
           </div>
         </div>
       </footer>

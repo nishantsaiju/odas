@@ -14,21 +14,21 @@
 
 
 					<label>
-					    <input type="text" name="name" value="" placeholder="Full name" autocomplete="on">
+					    <input type="text" name="name" value="" placeholder="Name" autocomplete="on">
 					</label><br><br>
 					<label>
-						 <input type="text" name="acronym" value="" placeholder="address" >
+						 <input type="text" name="acronym" value="" placeholder="Acronym" >
 					</label><br><br>
 					<label>
-						 <input type="text" name="esta" value="" placeholder="contact" >
-					</label><br><br>
-
-					<label>
-						 <input type="email" name="location"  value="" placeholder="email" >
+						 <input type="text" name="contact" value="" placeholder="Contact" >
 					</label><br><br>
 
 					<label>
-					   <input type="text" name="website" value="" placeholder="Fee" >
+						 <input type="text" name="location"  value="" placeholder="Location" >
+					</label><br><br>
+
+					<label>
+					   <input type="text" name="website" value="" placeholder="Website" >
 					</label><br><br>
 
 
@@ -50,13 +50,13 @@
 <!-- inserting data -->
 <?php
 if (isset($_POST['submit'])) {
-	$first_name = $_POST['name'];
-	$ac         = $_POST['acronym'];
-	$estab      = $_POST['esta'];
-	$location   = $_POST['location'];
-	$website    = $_POST['website'];
-	$sql        = "INSERT INTO college (name,acronym,established,location,website)
-	 VALUES ('$first_name','$ac','$estab','$location','$website')";
+	$name     = $_POST['name'];
+	$ac       = $_POST['acronym'];
+	$contact  = $_POST['contact'];
+	$location = $_POST['location'];
+	$website  = $_POST['website'];
+	$sql      = "INSERT INTO college (name,acronym,contact,location,website)
+	 	 VALUES ('$name','$ac','$contact','$location','$website')";
 	if (mysqli_query($conn, $sql)) {
 		echo "New record created successfully !";
 	} else {
