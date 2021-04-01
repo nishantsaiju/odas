@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Online Doctor</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -370,27 +370,7 @@
   </style>
   <body>
     <header>
-      <div class="container">
-        <!-- Top bar -->
-        <div class="top_bar">
-          <div class="top_content">
-            <div class="row">
-              <div class="col-lg-6 phone">
-                &nbsp;<i class="fa fa-clock-o" aria-hidden="true"></i>
-                2020:12:28
-              </div>
-              <div class="col-lg-6 social_icons">
-                <div class="social_icons_wrapper">
-                  <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
-                  <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
-                  <span
-                    ><i class="fa fa-instagram" aria-hidden="true"></i
-                  ></span>
-                  <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
+     
           <div class="container">
             <div class="row">
               <div class="col-lg-6 logo">

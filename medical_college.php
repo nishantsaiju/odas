@@ -5,7 +5,7 @@
 
 	<!-- mc info -->
 	<div class="container form-group mc">
-		<h2 class="text-center" style="background-color:#272327;color: #fff;">Public Medical College in Bangladesh</h2>
+		<h2 class="text-center" style="background-color:#272327;color: #fff;">Medical College in Nepal</h2>
        <?php
 if (mysqli_num_rows($result) > 0) {
 ?>
@@ -14,7 +14,7 @@ if (mysqli_num_rows($result) > 0) {
   <tr>
     <td>Name</td>
     <td>Acronym</td>
-    <td>Established</td>
+    <td>Contact</td>
     <td>Location</td>
     <td>Website</td>
   </tr>
@@ -25,7 +25,7 @@ while($row = mysqli_fetch_array($result)) {
 <tr>
     <td><?php echo $row["name"]; ?></td>
     <td><?php echo $row["acronym"]; ?></td>
-    <td><?php echo $row["established"]; ?></td>
+    <td><?php echo $row["contact"]; ?></td>
     <td><?php echo $row["location"]; ?></td>
      <td><?php echo $row["website"]; ?></td>
 </tr>

@@ -18,26 +18,35 @@
 				  	
 			 		
 					<label>
-					    <input type="text" name="name" value="" placeholder="Full name" autocomplete="on">
+					    <input type="text" name="name" value="" placeholder="Full Name" autocomplete="on">
 					</label><br><br>
 					<label>
-						 <input type="text" name="address" value="" placeholder="address" >
+						 <input type="text" name="address" value="" placeholder="Address" >
 					</label><br><br>
 					<label>
-						 <input type="text" name="contact" value="" placeholder="contact" >
+						 <input type="text" name="contact" value="" placeholder="Contact" >
 					</label><br><br>
 
 					<label>
-						 <input type="email" name="email"  value="" placeholder="email" >
+						 <input type="email" name="email"  value="" placeholder="Email" >
 					</label><br><br>
 					
 					<label>
 						 <select name="expertise" >
-										<option>-Expert in-</option>
-										<option>Medicine</option>
-										<option>Heart</option>
-										<option>Bone</option>
-										<option>kedney</option>
+										<option>-Expert In-</option>
+										<option>Dentistry</option>
+										<option>Neurology</option>
+										<option>Cardiology</option>
+										<option>Eye Care</option>
+										<option>Anaesthesia</option>
+										<option>Pathology</option>
+										<option>Gynecology</option>
+										<option>Dermatology</option>
+										<option>Ear Nose Throat</option>
+										<option>Physiotherapy</option>
+										<option>Radiology</option>
+										<option>Intensive Care</option>
+										<option>Nutrition and Dietetics</option>
 										</select>
 					</label><br><br>
 					<label>

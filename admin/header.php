@@ -36,9 +36,9 @@
 				
 				
 				<li><a href="addDoctor2.php">Add Doctor</a></li>
+				<li><a href="viewDoctor.php">View Doctor</a></li>
 				<li><a href="college.php">Add College</a></li>
 				<li><a href="viewcollege.php">View College</a></li>
-				<li><a href="viewDoctor.php">View Doctor</a></li>
 				<li><a href="viewCustomer.php">View Patient</a></li>
 				<li><a href="viewAppoinment.php">View Appoinment</a></li>
 				<li><a href="viewFeedback.php">View Feedback</a></li>

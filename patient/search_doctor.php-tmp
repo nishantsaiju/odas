@@ -1,11 +1,11 @@
-<?php if(!isset($_SESSION)){
+<?php if (!isset($_SESSION)) {
 	session_start();
-	}  
+}
 ?>
-<?php include('header.php'); ?>
-<?php include('uptomenu.php'); ?>
+<?php include ('header.php');?>
+<?php include ('uptomenu.php');?>
 
-<!-- <?php include('function.php'); ?> -->
+<!-- <?php include ('function.php');?>-->
 
 
 
@@ -24,7 +24,7 @@
 												<option>Dinajpur</option>
 												<option>Rangpur</option>
 												<option>Rajsahi</option>
-												
+
 											</select>
 
 					</label><br><br>
@@ -46,22 +46,22 @@
 					</label>
 					<button name="submit" type="submit" style="border-radius: 3px;color:#000;margin-left: 145px;margin-top: 8px;">Search</button>
 					<br>
-					
+
 					</form>
 
 
 
-					
+
 		 	</div>
 	</div>
-	
-	
-
-	
- <?php include('../footer.php'); ?>
 
 
-	
+
+
+<?php include ('../footer.php');?>
+
+
+
 	</div><!--  containerFluid Ends -->
 
 
